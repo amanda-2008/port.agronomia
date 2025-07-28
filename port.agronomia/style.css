@@ -1,0 +1,32 @@
+
+        /* Custom styles for the body and hero section */
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth; /* Enables smooth scrolling when clicking navigation links */
+        }
+        .hero-section {
+            /* Placeholder for a green field image to represent agronomy */
+            background-image: url('planta.png');
+            background-size: cover; /* Ensures the image covers the entire section */
+            background-position: center; /* Centers the background image */
+        }
+        /* Style for the custom message box */
+        .message-box {
+            position: fixed; /* Fixed position relative to the viewport */
+            top: 20px;
+            right: 20px;
+            background-color: #4CAF50; /* Green background for success messages */
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000; /* Ensures it's on top of other elements */
+            display: none; /* Hidden by default */
+            opacity: 0; /* Starts fully transparent */
+            transition: opacity 0.5s ease-in-out; /* Smooth fade-in/out effect */
+        }
+        .message-box.show {
+            display: block; /* Make it visible */
+            opacity: 1; /* Fully opaque when shown */
+        }
+    
